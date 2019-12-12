@@ -5,12 +5,12 @@
     </router-link>
     <div id="nav">
       <router-link class="home-link" to="/">Home </router-link>
-      <router-link class="top-10-link" to="/popular">Top 10 </router-link>
-      <router-link class="all-link" to="/photos">All Photos </router-link>
-      <router-link class="buildings-link" to="/buildings">Buildings </router-link>
-      <router-link class="nature-link" to="/nature">Nature </router-link>
-      <router-link class="people-link" to="/people">People </router-link>
-      <router-link class="aerialviews-link" to="/aerial-views">Aerial Views </router-link>
+      <router-link class="top-10-link" to="/popular">Top 10</router-link>
+      <router-link class="all-link" to="/photos">All Photos</router-link>
+      <router-link class="buildings-link" to="/buildings">Buildings</router-link>
+      <router-link class="nature-link" to="/nature">Nature</router-link>
+      <router-link class="people-link" to="/people">People</router-link>
+      <router-link class="aerialviews-link" to="/aerial-views">Aerial Views</router-link>
       <router-link class="interior-link" to="/interior">Interior </router-link>
 
       <router-link class="search-link" to="/search">
@@ -70,10 +70,12 @@ img {
 .top-10-link,
 .nature-link,
 .buildings-link,
-.people-link {
-  margin-right: 5%;
+.people-link,
+.aerialviews-link {
+  margin-right: 3%;
 }
 .search-link {
-  margin-right: 15%;
+  margin-right: 4.6%;
+  margin-left: 4%;
 }
 </style>

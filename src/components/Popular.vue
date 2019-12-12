@@ -16,7 +16,7 @@
           <div>
             <div v-if="photo === popularPhotos[0]" class="time-arrow">
               <img class="arrow-img" src="../assets/arrow.png" alt="arrow" />
-              <h2 class="back-year">Time travel</h2>
+              <h2 class="back-year">Time travel HERE!</h2>
             </div>
             <VueCompareImage
               :handleSize="50"
@@ -56,9 +56,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-h1 {
-  font-size: 35px;
-}
-</style>

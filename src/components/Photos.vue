@@ -64,14 +64,14 @@ export default {
 }
 
 .back-year {
-  width: 5%;
-  margin: 0 50%;
+  width: 100%;
+  margin: 0 40%;
 }
 .time-arrow {
   z-index: 100;
   position: absolute;
   top: 175%;
-  right: 32%;
+  right: 31%;
 }
 .hooper-container {
   margin-top: 30px;
@@ -132,16 +132,16 @@ export default {
   color: black;
   font-size: 18px;
   height: 20px;
-  margin: 15px 5px;
+  margin: 5px 0px 15px 0px;
   width: 85%;
 }
 .then {
   float: left;
-  font-size: 22px;
+  font-size: 25px;
 }
 .now {
   float: right;
-  font-size: 22px;
+  font-size: 25px;
 }
 .time-rail {
   font-size: 22px;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 v-if="searching === true">
-      Searching...
+      Searching...Wait a moment
     </h2>
     <div
       class="no-results"

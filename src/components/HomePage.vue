@@ -17,7 +17,11 @@
       This can help us learn <b>history</b>, understand the <b>evolution</b>, appreciate what we
       have gained with <b>progress</b>, and even reflect on what we have <b>lost</b>....
     </p>
-    <h1>Welcome, to a journey through time, all around the world...</h1>
+    <h1>
+      Welcome, to<br />
+      <p class="title-app">A Journey Through Time</p>
+      ...
+    </h1>
   </div>
 </template>
 
@@ -32,11 +36,16 @@ h1 {
   margin-top: 2%;
 }
 img {
-  width: 15%;
+  width: 12%;
   border-radius: 50%;
 }
 p {
   font-size: 26px;
   margin: 3% 20%;
+}
+.title-app {
+  font-size: 150%;
+  color: rgb(14, 39, 103);
+  margin-top: 20px;
 }
 </style>
