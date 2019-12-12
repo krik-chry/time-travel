@@ -28,15 +28,15 @@ export default {
   },
   methods: {
     nextPage() {
-      this.allPhotos = [];
       if (this.pageNumber < 105) {
+        this.allPhotos = [];
         this.pageNumber += 1;
         this.getAll();
       }
     },
     previousPage() {
-      this.allPhotos = [];
       if (this.pageNumber > 1) {
+        this.allPhotos = [];
         this.pageNumber -= 1;
         this.getAll();
       }

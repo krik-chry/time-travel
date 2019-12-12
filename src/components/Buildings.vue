@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="fetching-message" v-if="fetching">Fetching...Wait a moment</p>
+    <p class="fetching-message" v-if="fetching">Getting photos...Wait a moment</p>
 
     <hooper
       class="hooper-container"

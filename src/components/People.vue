@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1 class="page-title">People</h1>
-    <p class="fetching-message" v-if="people.length === 0">Fetching...Wait a moment</p>
+    <p class="fetching-message" v-if="fetching">Getting photos...Wait a moment</p>
 
     <hooper
       class="hooper-container"
@@ -44,7 +43,7 @@ import 'hooper/dist/hooper.css';
 
 export default {
   name: 'People',
-  props: ['people'],
+  props: ['people', 'fetching'],
   components: {
     VueCompareImage,
     Hooper,

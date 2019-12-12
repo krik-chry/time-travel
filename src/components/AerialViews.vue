@@ -1,15 +1,7 @@
 <template>
   <div>
-    <h2 v-if="searching === true">
-      Searching...
-    </h2>
-    <div
-      class="no-results"
-      v-if="searchResults.length === 0 && searched === true && searching === false"
-    >
-      <img src="https://www.diamondboomerang.com/images/no-result.png" alt="not-found" />
-      <h1 class="try-again">PLEASE TRY AGAIN</h1>
-    </div>
+    <p class="fetching-message" v-if="fetching">Getting photos...Wait a moment</p>
+
     <hooper
       class="hooper-container"
       :vertical="true"
@@ -18,7 +10,7 @@
       :centerMode="true"
       :mouseDrag="false"
     >
-      <slide v-bind:key="photo.id" v-for="photo in searchResults">
+      <slide v-bind:key="photo.id" v-for="photo in aerialViews">
         <div class="compare-container">
           <div>
             <VueCompareImage
@@ -36,7 +28,7 @@
 
           <div class="photo-info">
             <h1>{{ photo.title }}</h1>
-            <h2>{{ photo.location_text }}, {{ photo.country }}</h2>
+            <h2>Location: {{ photo.location_text }}, {{ photo.country }}</h2>
           </div>
         </div>
       </slide>
@@ -50,25 +42,17 @@ import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
 
 export default {
-  name: 'Search',
+  name: 'AerialViews',
+  props: ['aerialViews', 'fetching'],
   components: {
     VueCompareImage,
     Hooper,
     Slide
-  },
-  props: ['searchResults', 'searching', 'searched', 'previousTerm']
+  }
 };
 </script>
 
 <style scoped>
-.try-again {
-  font-size: 50px;
-  letter-spacing: 2px;
-  color: #565656;
-}
-.no-results {
-  margin-top: 4%;
-}
 h1 {
   font-size: 35px;
 }

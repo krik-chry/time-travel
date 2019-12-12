@@ -28,15 +28,15 @@ export default {
   },
   methods: {
     nextPage() {
-      this.buildings = [];
       if (this.pageNumber < 87) {
+        this.buildings = [];
         this.pageNumber += 1;
         this.getAll();
       }
     },
     previousPage() {
-      this.buildings = [];
       if (this.pageNumber > 1) {
+        this.buildings = [];
         this.pageNumber -= 1;
         this.getAll();
       }

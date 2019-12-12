@@ -10,6 +10,9 @@
       <router-link class="buildings-link" to="/buildings">Buildings </router-link>
       <router-link class="nature-link" to="/nature">Nature </router-link>
       <router-link class="people-link" to="/people">People </router-link>
+      <router-link class="aerialviews-link" to="/aerial-views">Aerial Views </router-link>
+      <router-link class="interior-link" to="/interior">Interior </router-link>
+
       <router-link class="search-link" to="/search">
         <img src="http://simpleicon.com/wp-content/uploads/active-search.png" alt="search-icon" />
         Search

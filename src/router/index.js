@@ -7,6 +7,8 @@ import People from '../views/People.vue';
 import Nature from '../views/Nature.vue';
 import Buildings from '../views/Buildings.vue';
 import Search from '../views/Search.vue';
+import AerialViews from '../views/AerialViews.vue';
+import Interior from '../views/Interior.vue';
 
 Vue.use(VueRouter);
 
@@ -48,6 +50,16 @@ const routes = [
     path: '/nature',
     name: 'nature',
     component: Nature
+  },
+  {
+    path: '/interior',
+    name: 'interior',
+    component: Interior
+  },
+  {
+    path: '/aerial-views',
+    name: 'aerialViews',
+    component: AerialViews
   },
   {
     path: '/search',
