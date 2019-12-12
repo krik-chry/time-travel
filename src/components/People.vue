@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>People</h1>
-    <p class="fetching-message" v-if="people.length === 0">Fetching...</p>
+    <h1 class="page-title">People</h1>
+    <p class="fetching-message" v-if="people.length === 0">Fetching...Wait a moment</p>
 
     <hooper
       class="hooper-container"

@@ -1,6 +1,12 @@
 <template>
   <div class="buildings">
-    <Buildings v-bind:buildings="buildings" />
+    <h1 class="page-title">Buildings</h1>
+    <div class="page-nav">
+      <h3 class="page-num" v-if="pageNumber">Page {{ pageNumber }}</h3>
+      <button class="nav-button" @click="previousPage">Previous Page</button>
+      <button class="nav-button" @click="nextPage">Next Page</button>
+    </div>
+    <Buildings v-bind:buildings="buildings" v-bind:fetching="fetching" />
   </div>
 </template>
 
@@ -15,15 +21,40 @@ export default {
   },
   data() {
     return {
-      buildings: []
+      buildings: [],
+      pageNumber: 1,
+      fetching: false
     };
   },
+  methods: {
+    nextPage() {
+      this.buildings = [];
+      if (this.pageNumber < 87) {
+        this.pageNumber += 1;
+        this.getAll();
+      }
+    },
+    previousPage() {
+      this.buildings = [];
+      if (this.pageNumber > 1) {
+        this.pageNumber -= 1;
+        this.getAll();
+      }
+    },
+    getAll() {
+      this.fetching = true;
+      axios
+        .get(
+          `https://cors-anywhere.herokuapp.com/https://www.re.photos/api/compilation/?category=1&page=${this.pageNumber}`
+        )
+        .then(res => {
+          this.fetching = false;
+          this.buildings = res.data.results;
+        });
+    }
+  },
   created() {
-    axios
-      .get(
-        'https://cors-anywhere.herokuapp.com/https://www.re.photos/api/compilation/?category=1&country=&earlier_than=&later_than=&ordering=-visitors&position_in=&tag=&timespan='
-      )
-      .then(res => (this.buildings = res.data.results));
+    this.getAll();
   }
 };
 </script>

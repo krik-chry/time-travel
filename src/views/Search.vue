@@ -2,7 +2,7 @@
   <div>
     <h1>Search</h1>
     <h3>Search for a city, a country, a popular event or just a keyword...</h3>
-    <form @submit="search">
+    <form>
       <input v-model="term" type="search" />
       <button @click="search">Search</button>
     </form>
@@ -66,7 +66,6 @@ input {
 
 button {
   outline: none;
-
   border-radius: 20px;
   background: rgba(37, 35, 35, 0.5);
   padding: 10px;

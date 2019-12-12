@@ -3,9 +3,13 @@
     <h2 v-if="searching === true">
       Searching ...
     </h2>
-    <h2 v-if="searchResults.length === 0 && searched === true && searching === false">
-      No results... Please try again
-    </h2>
+    <div
+      class="no-results"
+      v-if="searchResults.length === 0 && searched === true && searching === false"
+    >
+      <img src="https://www.diamondboomerang.com/images/no-result.png" alt="not-found" />
+      <h1 class="try-again">PLEASE TRY AGAIN</h1>
+    </div>
     <hooper
       class="hooper-container"
       :vertical="true"
@@ -57,6 +61,14 @@ export default {
 </script>
 
 <style scoped>
+.try-again {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #565656;
+}
+.no-results {
+  margin-top: 4%;
+}
 h1 {
   font-size: 35px;
 }

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Photos List</h1>
-    <p class="fetching-message" v-if="allPhotos.length === 0">Fetching...</p>
+    <p class="fetching-message" v-if="fetching">Fetching...Wait a moment</p>
 
     <hooper
       class="hooper-container"
@@ -14,10 +13,6 @@
       <slide v-bind:key="photo.id" v-for="photo in allPhotos">
         <div class="compare-container">
           <div>
-            <div v-if="photo === allPhotos[0]" class="time-arrow">
-              <img class="arrow-img" src="../assets/arrow.png" alt="arrow" />
-              <h2 class="back-year">Time travel</h2>
-            </div>
             <VueCompareImage
               :handleSize="50"
               :sliderPositionPercentage="1"
@@ -48,7 +43,7 @@ import 'hooper/dist/hooper.css';
 
 export default {
   name: 'Photos',
-  props: ['allPhotos'],
+  props: ['allPhotos', 'fetching'],
   components: {
     VueCompareImage,
     Hooper,
@@ -58,6 +53,12 @@ export default {
 </script>
 
 <style>
+.page-title {
+  margin: 40px 30%;
+  background: rgb(14, 39, 103);
+  color: white;
+  border-radius: 20px;
+}
 .fetching-message {
   font-size: 30px;
 }

@@ -22,11 +22,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 
 body {
   background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/03/6809725-simple-vintage-backgrounds.jpg);
+  background-color: transparent;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

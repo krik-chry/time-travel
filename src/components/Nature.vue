@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Nature</h1>
-    <p class="fetching-message" v-if="nature.length === 0">Fetching...</p>
+    <h1 class="page-title">Nature</h1>
+    <p class="fetching-message" v-if="nature.length === 0">Fetching...Wait a moment</p>
 
     <hooper
       class="hooper-container"

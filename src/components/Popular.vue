@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Most Popular Photos</h1>
-    <p class="fetching-message" v-if="popularPhotos.length === 0">Fetching...</p>
+    <h1 class="page-title">Most Popular Photos</h1>
+    <p class="fetching-message" v-if="popularPhotos.length === 0">Fetching...Wait a moment</p>
 
     <hooper
       class="hooper-container"
