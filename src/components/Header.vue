@@ -36,17 +36,19 @@ export default {
 }
 
 .header h1 {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 5px solid rgba(37, 35, 35, 0.7);
   font-size: 35px;
   color: rgb(14, 39, 103);
-  width: 100%;
-  margin: 0 1% 0 1%;
 }
 #nav {
   display: flex;
 }
 .header a {
+  margin-right: 50px;
   font-weight: bold;
-  margin-right: 80px;
   font-size: 22px !important;
   color: rgb(14, 39, 103);
   padding-right: 5px;

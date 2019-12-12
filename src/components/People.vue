@@ -29,7 +29,7 @@
 
           <div class="photo-info">
             <h1>{{ photo.title }}</h1>
-            <h2>Location: {{ photo.location_text }}, {{ photo.country }}</h2>
+            <h2>{{ photo.location_text }}, {{ photo.country }}</h2>
           </div>
         </div>
       </slide>
