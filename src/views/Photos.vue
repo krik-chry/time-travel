@@ -62,13 +62,13 @@ export default {
 <style>
 .page-title {
   margin: 15px 30% 15px 30%;
-  background: rgb(14, 39, 103);
+  background: #682f00;
   color: white;
   border-radius: 20px;
 }
 .page-nav {
   padding: 0 20px;
-  border: 2px solid rgb(10, 39, 78);
+  border: 2px solid darkslategray;
   border-radius: 20px;
   background: lightgray;
   margin: 0 35% 0 35%;

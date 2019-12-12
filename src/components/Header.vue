@@ -47,7 +47,7 @@ export default {
   padding-bottom: 10px;
   border-bottom: 5px solid rgba(37, 35, 35, 0.7);
   font-size: 35px;
-  color: rgb(14, 39, 103);
+  color: #682f00;
 }
 #nav {
   margin-top: 20px;
@@ -56,7 +56,7 @@ export default {
 .header a {
   font-weight: bold;
   font-size: 22px !important;
-  color: rgb(14, 39, 103);
+  color: darkslategray;
   text-decoration: none;
 }
 img {

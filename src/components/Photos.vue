@@ -26,7 +26,7 @@
             <div class="time-rail">Timespan: {{ photo.timespan }}</div>
           </div>
 
-          <div class="photo-info">
+          <div class="photo-info" psda>
             <h1>{{ photo.title }}</h1>
             <h2>{{ photo.location_text }}, {{ photo.country }}</h2>
           </div>
@@ -66,12 +66,14 @@ export default {
 .back-year {
   width: 100%;
   margin: 0 40%;
+  user-select: none;
 }
 .time-arrow {
   z-index: 100;
   position: absolute;
   top: 175%;
   right: 31%;
+  user-select: none;
 }
 .hooper-container {
   margin-top: 30px;
@@ -86,14 +88,14 @@ export default {
   text-decoration: underline;
 }
 .left-image {
-  border: 15px solid darkblue;
+  border: 15px solid darkslategray;
   border-radius: 20px;
   width: 85% !important;
   max-height: 700px !important;
 }
 .right-image {
   border-radius: 20px;
-  border: 15px solid darkslategray;
+  border: 15px solid #682f00;
   width: 85% !important;
   max-height: 700px !important;
 }
@@ -117,19 +119,19 @@ export default {
   cursor: ew-resize !important;
   transform: rotate(90deg);
   opacity: 0.6;
-  border: 5px solid rgb(14, 39, 103) !important;
+  border: 5px solid rgb(51, 28, 12) !important;
 }
 .left-arrow {
-  border-color: rgba(0, 0, 0, 0) rgb(14, 39, 103) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) rgb(51, 28, 12) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) !important;
 }
 .right-arrow {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(14, 39, 103) !important;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(51, 28, 12) !important;
 }
 .line {
   width: 0px !important;
 }
 .now-then {
-  color: black;
+  color: rgb(51, 28, 12);
   font-size: 18px;
   height: 20px;
   margin: 5px 0px 15px 0px;
