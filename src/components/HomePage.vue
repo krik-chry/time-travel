@@ -20,7 +20,6 @@
     <h1>
       Welcome, to<br />
       <p class="title-app">A Journey Through Time</p>
-      ...
     </h1>
   </div>
 </template>

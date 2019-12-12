@@ -31,6 +31,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 </style>
