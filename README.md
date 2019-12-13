@@ -21,6 +21,8 @@
 - Aerial Views
 - Interior
 
+#### User can also search through the collections by keywords, city names or countries and get the specific results.
+
 ---
 
 ## [Demo](https://time-travel-app.herokuapp.com/#/)
