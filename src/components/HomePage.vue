@@ -1,7 +1,6 @@
 <template>
   <div class="main-info">
     <h1 class="intro">Time transforms everything.</h1>
-    <img src="https://live.staticflickr.com/121/313964396_4b6d90497e_b.jpg" />
     <p>
       As the years go by, <b class="emphasized">people</b>,
       <b class="emphasized">natural landscapes</b>, <b class="emphasized">cities</b> and all aspects
